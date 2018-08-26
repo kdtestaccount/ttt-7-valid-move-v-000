@@ -1,11 +1,10 @@
 # code your #valid_move? method here
 
-def valid_move?(board, index, value)
+def valid_move?(board, index)
  if position_taken(board, index) == true
    puts "This move can't be completed"
    false
   elsif position_taken(board, index) == false
-    board[index] = value
     true
   else
     nil
