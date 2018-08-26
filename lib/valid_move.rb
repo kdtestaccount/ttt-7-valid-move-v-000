@@ -1,7 +1,7 @@
 # code your #valid_move? method here
 
 def valid_move(board, index, value)
- if position_taken = true
+ if position_taken == true
    puts "This move can't be completed"
   else
     board[index] = value
