@@ -3,9 +3,10 @@
 def valid_move?(board, index, value)
  if position_taken(board, index) == true
    puts "This move can't be completed"
-   return false
+   false
   elsif position_taken(board, index) == false
     board[index] = value
+    true
   else
     nil
   end
